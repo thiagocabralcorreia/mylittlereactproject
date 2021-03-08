@@ -1,0 +1,46 @@
+.myButtons {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.button {
+  font-size: 1rem;
+  font-family: var(--type-first);
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  background: #fff;
+  color: #333;
+  min-width: 8rem;
+  max-height: 2.5rem;
+  padding: 0.8rem 1.2rem;
+  box-sizing: border-box;
+  transition: 0.1s;
+  text-align: center;
+  align-items: center;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #afadbf, 0 0 0 4px #62606b;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.animationRight {
+  opacity: 0.5;
+  transform: translateX(20px);
+  animation: animationRight 0.5s infinite;
+}
+
+@keyframes animationRight {
+  to {
+    opacity: 1;
+  }
+}
